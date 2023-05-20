@@ -1,0 +1,46 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="550">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <WrapPanel x:Name="panel" DockPanel.Dock="Top" MinWidth="100">
+                <Button x:Name="btn1">Создать</Button>
+                <Button x:Name="btn2">Изменить</Button>
+                <Button x:Name="btn3" >Удалить</Button>
+                <Button x:Name="btn4" >Сохранить</Button>
+                <Button x:Name="btn6" >Сохранить Как</Button>
+                <Button x:Name="btn7" >Открыть</Button>
+                <Button x:Name="btn8" >Выход</Button>
+                <Button x:Name="btn9" >Завершение Сеанса</Button>
+            </WrapPanel>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel>
+                <Button x:Name="btnOpen" Margin="3" >Почта</Button>
+                <Button x:Name="btnCalendar" Margin="3" >Календари</Button>
+                <Button x:Name="btnTasks" Margin="3">Задачи</Button>
+                <Button x:Name="btnMagazine" Margin="3">Журнал</Button>
+                <Button x:Name="btnDates" Margin="3">Даты</Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1">
+                <Label>9:00 Начало Занятий</Label>
+                <Label>10:25 Перерыв</Label>
+                <Label>10:35 Начало Второй Пары</Label>
+                <Label>12:00 Конец Занятия</Label>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Window>
